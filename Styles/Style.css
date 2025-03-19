@@ -80,7 +80,7 @@ nav ul li img{
     gap: 30px;
     background-image: url('/Images/hero2.jpg');
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
     background-size: cover;
     background-color: var(--other-color);
 }
