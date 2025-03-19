@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: rgb(230, 229, 227);
+    --secondary-color: rgb(52, 183, 167);
+    --other-color: rgb(220, 219, 217);
+    --text-secondary-color: rgb(105, 105, 105);
+}
+
+body{
+    background-color: #e6e5e3;
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 80px;
+}
+
+.nav-bar{
+    width: 100%;
+    height: 70px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.nav-bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    font-weight: 300;
+}
+
+.nav-bar ul a:hover{
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+    text-decoration: none;
+    color: black;
+}
+
+.medias{
+    width: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu{
+    display: none;
+}
+
+.parcours-text{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.line{
+    width: 75px;
+    height: 5px;
+    background-color: var(--secondary-color);
+}
+
+.parcours{
+    display: flex;
+    width: 100%;
+    padding: 20px 50px;
+}
+
+.parcours-education, .parcours-experience{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 15px;
+    width: 50%;
+}
+
+.parcours-education .education-title, .parcours-experience .experience-title{
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding-left: 20px;
+}
+
+.education, .experience{
+    display: flex;
+    flex-direction: column;
+}
+
+.education-item, .experience-item{
+    display: flex;
+    gap: 15px;
+}
+
+.parcours-education .info-title, .parcours-experience .info-title{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text-secondary-color)
+}
+
+.education-circle-line, .experience-circle-line{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-circle, .experience-circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--secondary-color);
+}
+
+.education-line, .experience-line{
+    width: 2px;
+    height: 175px;
+    background-color: var(--secondary-color);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-periode{
+    font-weight: 600;
+}
+
+.info-text{
+    color: rgba(0,0,0,0.9);
+    line-height: 25px;
+}
+
+.info-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 25px;
+}
+
+.info-texts ul{
+    margin-left: 50px;
+    line-height: 25px;
+}
+
+.experience-line{
+    height: 430px;
+}
+
+.experience-line-petit{
+    height: 330px;
+}
+
+.experience-line-plus-petit{
+    height: 280px;
+}
+
+.copyright{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+
+.copyright span{
+    font-weight: bold;
+}
+
+@media sreeen and (max-width: 480px) {
+    .experience-line{
+        height: 700px;
+    }
+    
+    .experience-line-petit{
+        height: 480px;
+    }
+    
+    .experience-line-plus-petit{
+        height: 360px;
+    }
+}
+
+@media screen and (max-width: 972px) {
+    .medias{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .nav-bar{
+        padding: 0px 20px;
+        justify-content: space-between;
+    }
+
+    nav ul li{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-left: 20px;
+        padding: 20px;
+    }
+
+    nav ul li img{
+        display: flex;
+    }
+
+    .nav-bar ul{
+        display: none;
+    }
+
+    .nav-bar.show ul{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--other-color);
+        position: absolute;
+        top: 70px;
+        right: 0px;
+        width: 300px;
+    }
+
+    .parcours{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 20px 8px;
+    }
+
+    .parcours-education, .parcours-experience{
+        width: 100%;
+    }
+
+    .experience-line{
+        height: 700px;
+    }
+    
+    .experience-line-petit{
+        height: 480px;
+    }
+    
+    .experience-line-plus-petit{
+        height: 360px;
+    }
+}
+
+@media  screen and (max-width: 1270px) {
+    .experience-line{
+        height: 500px;
+    }
+    
+    .experience-line-petit{
+        height: 420px;
+    }
+    
+    .experience-line-plus-petit{
+        height: 320px;
+    }
+}
+
+@media  screen and (max-width: 1130px) {
+    .experience-line{
+        height: 520px;
+    }
+    
+    .experience-line-petit{
+        height: 440px;
+    }
+    
+    .experience-line-plus-petit{
+        height: 340px;
+    }
+}
