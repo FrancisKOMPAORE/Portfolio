@@ -77,6 +77,11 @@ body{
     gap: 15px;
 }
 
+.parcours-text p{
+    padding-left: 10px;
+    line-height: 25px;
+}
+
 .line{
     width: 75px;
     height: 5px;
