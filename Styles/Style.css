@@ -80,7 +80,7 @@ nav ul li img{
     gap: 30px;
     background-image: url('/Images/hero2.jpg');
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: top;
     background-size: cover;
     background-color: var(--other-color);
 }
@@ -94,6 +94,7 @@ nav ul li img{
 .hero p{
     font-size: 22px;
     letter-spacing: 1px;
+    font-weight: 500;
 }
 
 .hero a{
@@ -131,6 +132,10 @@ nav ul li img{
 @media screen and (max-width: 972px) {
     .medias{
         display: none;
+    }
+
+    .hero{
+        background-position: 80% 70%;
     }
 
     .menu{
