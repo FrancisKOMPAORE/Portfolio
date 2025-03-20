@@ -172,6 +172,10 @@ body{
     }
 
     .contacts{
-        padding: 20px 5px;
+        padding: 20px 10px;
+    }
+
+    .contact-item{
+        width: 390px;
     }
 }
