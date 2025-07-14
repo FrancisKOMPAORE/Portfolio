@@ -181,9 +181,16 @@ body{
 
 .competences-evaluation-left progress, .competences-evaluation-right progress{
     width: 100%;
-    color: #000;
     border-radius: 10px;
     height: 10px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: var(--other-color);
+}
+
+progress::-webkit-progress-value {
+    background-color: var(--secondary-color);
 }
 
 .copyright{
